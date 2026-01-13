@@ -40,7 +40,7 @@ a{
 }
 
 body{
-    background-color: var(--color-primario-100);
+    background-color: var(--color-primario-100);/*100*/
 }
 
 .separador{
@@ -121,7 +121,12 @@ body{
     font-weight: lighter;
 }*/
 .header__acciones{
-    margin: 0px 0px 0px 31px;
+    display: flex;
+    gap: 8px;
+    flex-shrink: 1;
+}
+.header__acciones .pildora{
+    white-space: nowrap;
 }
 
 .pildora{
@@ -196,11 +201,13 @@ body{
 .bienvenida__tarjetas {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
 }
 .tarjeta{
     background-color: var(--color-primario-0);
     margin: 12px 0px 0px;
     padding: 24px;
+    border-radius: 32px;
 }
 .bienvenida__tarjetas h3{
     font-size: 24px;
@@ -437,14 +444,19 @@ footer{
     .bienvenida__cta{       
         padding: 32px 40px;
 
-    }
+    }  /* 
     .pildora-conocer-historia{
         align-self: center;
-        min-width: 192px;
+     min-width: 192px;
         min-height: 43px;
         text-align: center;
         margin: 0;
-    } 
+    } */
+     .pildora-conocer-historia{
+        flex-shrink: 1;
+        white-space: nowrap;
+
+     }
    
 }
 
@@ -519,6 +531,10 @@ footer{
         display: flex;
         flex-direction: column;
         align-items: flex-start;
+        gap: 16px;
+    }
+    .tarjeta{
+        width: 100%;
     }
     .footer__nav{
         grid-template-columns: repeat(2, 1fr);
