@@ -40,7 +40,7 @@ a{
 }
 
 body{
-    background-color: var(--color-primario-100);/*100*/
+    background-color: var(--color-primario-100);
 }
 
 .separador{
@@ -56,7 +56,6 @@ body{
     margin: 0 auto;
     padding-inline: 16px;
 }
-
 
 /*--HEADER--*/
 
@@ -75,14 +74,11 @@ body{
 }
 
 .header__contenedor{
-    /*width: 100%;
-    max-width: 1022px;*/
     display: flex;
     align-items: center;
     justify-content: space-between;
     font-size: 14px;
     font-weight: bold;
-    /*padding: 16px;*/
 }
 
 .header__menu ul{
@@ -96,14 +92,6 @@ body{
     font-size: 14px;
 }
 .header__menu li:hover{
-    min-height: 41px;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    line-height: 1.5rem;
-    border-radius: 50px;
-    font-size: 14px;
-    font-weight: bold;
     background-color: var(--color-primario-220);
     color: var(--color-primario-500);
     cursor: pointer;
@@ -115,11 +103,7 @@ body{
 .header__izquierda, .header__centro, .header__derecha{
     display: none;
 }
-/*
-.header__separador{
-    color: var(--color-primario-235);
-    font-weight: lighter;
-}*/
+
 .header__acciones{
     display: flex;
     gap: 8px;
@@ -187,10 +171,6 @@ body{
 /*--Tarjetas-bienvenida--*/
 
 .bienvenida__contenedor{
-    /*width: 100%;
-    max-width: 1022px;
-    margin: 0 auto;
-    padding-inline: 16px;*/
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -288,10 +268,6 @@ body{
 /*--COBROS--*/
 
 .cobros__contenedor{
-   /* width: 100%;
-    max-width: 1022px;
-    margin: 0 auto;
-    padding: 0;*/
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -308,11 +284,12 @@ body{
     width: 100%;
     display: flex;
     justify-content: center;
+    background-color: var(--color-primario-0);
+    border-radius: 32px;
 }
 .metodo__contenido{
     min-width: 50%;
     padding: 32px 24px;
-    background-color: var(--color-primario-0);   
 }
 .metodo__contenido h3{
     font-size: 30px;
@@ -343,10 +320,6 @@ footer{
     align-items: center;   
 }
 .footer__contenedor{
-   /* max-width: 1022px;
-    width: 100%;
-    margin: 0 auto;
-    padding: 0 16px;*/
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -358,25 +331,6 @@ footer{
     grid-column-gap: 24px;
     grid-row-gap: 8px;
 }
-/*
-.footer__contenedor{
-    max-width: 1022px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    justify-content: left;
-    padding: 0px 0px 32px;
-    margin: 0px 138px 0px 138px;
-}
-.footer__nav{
-    display: flex;
-    flex-direction: row;
-    gap: 80px;
-    margin: 0;
-    padding: 0;    
-}*/
-
 .footer__nav li{
     margin: 8px 0px;
 }
@@ -405,11 +359,7 @@ footer{
     .header__menu, 
     .header__acciones{
         display: none;
-    }    
-    /*.header__separador{
-        display: none;
-    }*/
-    
+    }       
     .header__contenedor{
         max-width: 990px;
         padding: 0;        
@@ -438,26 +388,14 @@ footer{
         width: 41px;
         cursor: pointer;
     }
-   /* .bienvenida__contenedor{
-        max-width: 942px;
-    }*/
     .bienvenida__cta{       
         padding: 32px 40px;
 
-    }  /* 
+    }
     .pildora-conocer-historia{
-        align-self: center;
-     min-width: 192px;
-        min-height: 43px;
-        text-align: center;
-        margin: 0;
-    } */
-     .pildora-conocer-historia{
         flex-shrink: 1;
         white-space: nowrap;
-
-     }
-   
+     }  
 }
 
 @media screen and (max-width: 767px) {
@@ -501,12 +439,7 @@ footer{
     }
     .metodo p{
         font-size: 16px;
-    }/*
-    .metodo img{
-        margin: 0 auto;
-        display: block;
-        max-width: 650px;
-    }*/
+    }
     .pildora-conocer{
         margin-top: 24px;
     }
@@ -546,19 +479,8 @@ footer{
         margin-bottom: 16px;
         
     }
-    
 }
 
-/*@media screen and (max-width: 480px) {
-    .metodo{
-        display: flex;
-        flex-direction: column;
-    }
-    .encabezado__cobros h2{
-        font-size: 30px;
-        margin: 0;
-    }
-}*/
 @media screen and (min-width:320px) and (max-width: 480px){
     .bienvenida__cta{
         align-items: center;
