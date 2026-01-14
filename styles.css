@@ -354,50 +354,27 @@ footer{
 
 /*--RESPONSIVE--*/
 
-@media screen and (max-width: 991px){
-    .header__logo, 
-    .header__menu, 
-    .header__acciones{
-        display: none;
-    }       
-    .header__contenedor{
-        max-width: 990px;
-        padding: 0;        
-    }
-    .header__izquierda, 
-    .header__centro,
-    .header__derecha {
-        display: flex;
-        justify-content: center;
+@media screen and (min-width: 320px) and (max-width: 480px){
+    .bienvenida__cta{
         align-items: center;
+        text-align: center;
     }
-    .hamb-list{
-        width: 40px;
-        height: 40px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        cursor: pointer;
+    .bienvenida__tarjetas{
+        padding: 24px;
+        margin: 0px 24px;
     }
-
-    .hamb-list i{
-        font-size: 24px;
-        color: var(--color-primario-600);
+    .bienvenida__tarjetas h3{
+        font-size: 20px;
     }
-    .header__logo-mobile{
-        width: 41px;
-        cursor: pointer;
+    .bienvenida__tarjetas p{
+        font-size: 16px;
     }
-    .bienvenida__cta{       
-        padding: 32px 40px;
-
+    .metodo__contenido img{
+        margin: 0 auto;
+        display: block;
+        max-width: 500px;
     }
-    .pildora-conocer-historia{
-        flex-shrink: 1;
-        white-space: nowrap;
-     }  
 }
-
 @media screen and (max-width: 767px) {
    
     .encabezado h2 {
@@ -481,24 +458,46 @@ footer{
     }
 }
 
-@media screen and (min-width:320px) and (max-width: 480px){
-    .bienvenida__cta{
+@media screen and (max-width: 991px){
+    .header__logo, 
+    .header__menu, 
+    .header__acciones{
+        display: none;
+    }       
+    .header__contenedor{
+        max-width: 990px;
+        padding: 0;        
+    }
+    .header__izquierda, 
+    .header__centro,
+    .header__derecha {
+        display: flex;
+        justify-content: center;
         align-items: center;
-        text-align: center;
     }
-    .bienvenida__tarjetas{
-        padding: 24px;
-        margin: 0px 24px;
+    .hamb-list{
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
     }
-    .bienvenida__tarjetas h3{
-        font-size: 20px;
+
+    .hamb-list i{
+        font-size: 24px;
+        color: var(--color-primario-600);
     }
-    .bienvenida__tarjetas p{
-        font-size: 16px;
+    .header__logo-mobile{
+        width: 41px;
+        cursor: pointer;
     }
-    .metodo__contenido img{
-        margin: 0 auto;
-        display: block;
-        max-width: 500px;
+    .bienvenida__cta{       
+        padding: 32px 40px;
+
     }
+    .pildora-conocer-historia{
+        flex-shrink: 1;
+        white-space: nowrap;
+     }  
 }
